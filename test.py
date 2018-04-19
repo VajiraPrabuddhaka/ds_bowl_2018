@@ -286,6 +286,6 @@ print ("new_test_ids:\n ", new_test_ids)
 sub = pd.DataFrame()
 sub['ImageId'] = new_test_ids
 sub['EncodedPixels'] = pd.Series(rles).apply(lambda x: ' '.join(str(y) for y in x))
-sub.to_csv('sub-dsbowl2018-2_final.csv', index=False)
+sub.to_csv('sub-dsbowl2018-2.csv', index=False)
 
 """
